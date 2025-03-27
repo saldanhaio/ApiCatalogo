@@ -109,3 +109,4 @@ C:\Users\INSPIRON 15\OneDrive\Documentos\dev\ApiCatalogo\ApiCatalogo\obj\Debug\n
 C:\Users\INSPIRON 15\OneDrive\Documentos\dev\ApiCatalogo\ApiCatalogo\obj\Debug\net8.0\ApiCatalogo.pdb
 C:\Users\INSPIRON 15\OneDrive\Documentos\dev\ApiCatalogo\ApiCatalogo\obj\Debug\net8.0\ApiCatalogo.genruntimeconfig.cache
 C:\Users\INSPIRON 15\OneDrive\Documentos\dev\ApiCatalogo\ApiCatalogo\obj\Debug\net8.0\ref\ApiCatalogo.dll
+C:\Users\INSPIRON 15\OneDrive\Documentos\dev\ApiCatalogo\ApiCatalogo\obj\Debug\net8.0\ApiCatalogo.sourcelink.json
