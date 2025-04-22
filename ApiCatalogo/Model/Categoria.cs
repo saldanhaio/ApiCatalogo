@@ -11,7 +11,7 @@ namespace ApiCatalogo.Model
 
         [Required]
         [StringLength(80)]
-        public string? Nome { get; set; }
+        public string? Nome { get; set; } 
 
         [Required]
         [StringLength(300)]

@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ApiCatalogo.Validations;
 
 namespace ApiCatalogo.Model
 {
@@ -9,8 +10,10 @@ namespace ApiCatalogo.Model
         [Key]
         public int ProdutoId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "O campo Nome é obrigatório")]
+          
         [StringLength(80)]
+        [PrimeiraLetraMaiuscula]
         public string? Nome { get; set; }
 
         [Required]
