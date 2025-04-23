@@ -5,7 +5,7 @@ using ApiCatalogo.Validations;
 namespace ApiCatalogo.Model
 {
     [Table("Produtos")]
-    public class Produto
+    public class Produto : IValidatableObject
     {
         [Key]
         public int ProdutoId { get; set; }
@@ -32,5 +32,19 @@ namespace ApiCatalogo.Model
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
 
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+          if (string.IsNullOrEmpty(Nome))
+          {
+              yield return new ValidationResult("O campo Nome é obrigatório", new[] { nameof(Nome) });
+          }
+          if (string.IsNullOrEmpty(Descricao))
+          {
+              yield return new ValidationResult("O campo Descricao é obrigatório", new[] { nameof(Descricao) });
+          }
+    
+        
+       
+        }
     }
 }
