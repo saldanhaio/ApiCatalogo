@@ -15,6 +15,7 @@ public class CustomerLogger : ILogger
 
     public IDisposable BeginScope<TState>(TState state)
     {
+        
         return null;
     }
 
@@ -30,6 +31,7 @@ public class CustomerLogger : ILogger
 
         EscreverTextoNoArquivo(mensagem);
     }
+    
 
     private void EscreverTextoNoArquivo(string mensagem)
     {
