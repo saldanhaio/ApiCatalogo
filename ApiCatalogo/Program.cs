@@ -6,6 +6,7 @@ using APICatalogo.Logging;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using ApiCatalogo.Repositories;
+using APICatalogo.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<ApiLoggingFilter>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 builder.Logging.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderCOnfiguration
 {
