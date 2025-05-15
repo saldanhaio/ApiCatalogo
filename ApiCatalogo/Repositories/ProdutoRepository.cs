@@ -1,6 +1,7 @@
 using ApiCatalogo.Context;
 using ApiCatalogo.Model;
 using ApiCatalogo.Repositories;
+using APICatalogo.Models;
 
 
 namespace APICatalogo.Repositories;
